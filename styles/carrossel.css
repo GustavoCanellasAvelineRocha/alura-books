@@ -8,11 +8,6 @@
     padding: 1em 0em 0.5em 0em;
 }
 
-/* z-index -1 para nao sobrepor o botton do header.*/
-.swiper{
-    z-index: -1;
-}
-
 .swiper-wrapper img{
     width: 100%;
 }
