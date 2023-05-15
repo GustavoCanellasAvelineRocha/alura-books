@@ -7,4 +7,4 @@ A aplicação é quase toda em HTML e CSS, porém optei por utilizar também um 
 
 Além disso, a página é completamente responsiva, possuindo um layout para desktop, iPads e smartphones.
 
-Veja o resultado! - alura-plus-seven-roan.vercel.app
+Veja o resultado! - [alura-plus-seven-roan.vercel.app](https://alura-plus-seven-roan.vercel.app/)
