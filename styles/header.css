@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    transition: 2s;
 }
 
 .container{
@@ -15,15 +16,13 @@
     display: none;
 }
 
-.container__botao2{
-    display: none;
-}
-
 .cabecalho__menu{
-    width: 48px;
-    height: 48px;
+    width: 38px;
+    height: 38px;
     background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
     background-position: center;
+    padding: 0.5em;
     display: inline-block;
 }
 
@@ -36,6 +35,12 @@
     position: absolute;
     top: 100%;
     width: 60%;
+}
+
+.container__botao:checked~.lista-menu {
+    display: block;
+    background: var(--branco);
+    z-index: 2;
 }
 
 .lista-menu__titulo{
@@ -54,8 +59,101 @@
     background-clip: text;
 }
 
-.container__botao:checked~.lista-menu{
-    display: block;
-    background-color: var(--branco);
-    z-index: 2; /*sobrepondo o carrossel*/
+.mudar-tema {
+    width: 38px;
+    height: 38px;
+    background-image: var(--darkMode-icon); 
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer; 
+}
+  
+#btn {
+    display: none;
+}
+
+.container__titulo{
+    display: none;
+}
+
+.opcoes{
+    display:none;
+}
+
+.container__texto{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .container__titulo,.container__titulo--negrito{
+        font-family: var(--font-josefin);
+        font-size: 30px;
+    }
+
+    .container__titulo{
+        display: block;
+        color: var(--preto);
+        font-weight: 400;
+    }
+
+    .container__titulo--negrito{
+        font-weight: 700;
+    }
+
+    .opcoes{
+        display: flex;
+    }
+
+    .opcoes__item{
+        padding: 0 1em;
+        color: var(--preto);
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .opcoes__link{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__favorito__transparente{
+        display: none;
+    }
+
+    .cabecalho__menu{
+        display: none;
+    }
+
+    .opcoes__botao:checked~.lista-menu{
+        display: block;
+        background-color: var(--branco);
+        width: auto;
+    }
+
+    .opcoes__botao{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1728px){
+    .container__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__texto{
+        display: block;
+    }
+
+    .cabecalho{
+        padding: 0 2em;
+    }
+
+    .opcoes{
+        margin-right: auto;
+    }
 }

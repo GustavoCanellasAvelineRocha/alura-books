@@ -6,6 +6,7 @@
     font-size: 18px;
     font-weight: 700;
     padding: 1em 0em 0.5em 0em;
+    transition: 2s;
 }
 
 .swiper-wrapper img{
@@ -30,6 +31,7 @@
     height: auto;
     display: flex;
     justify-content: space-between;
+    transition: 2s;
 }
 
 .card__descricao{
@@ -75,4 +77,63 @@
     color: var(--branco);
     background-color: var(--cor-laranja);
     border: 1px solid var(--cor-laranja);
+}
+
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo{
+        padding-top: 2em;
+        font-size: 24px;
+    }
+
+    .swiper-pagination{
+        padding: 2em 0em 4em 0em;
+    }
+
+    .swiper{
+        width: 70%;
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        display: block;
+        top: 60%;
+    }
+
+    .card{
+        width: 60%;
+        margin: 2em auto;
+    }
+
+    .card__img{
+        margin: 0em 0em 1em 4em;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+     .carrossel__container{
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+        align-items: center;
+     }
+
+     .swiper-pagination{
+        margin: 1em 0;
+        padding: 0;
+    }
+
+    .swiper{
+        width: 60%;
+    }
+
+    .card{
+        margin-left: 3em;
+    }
+
+    .card__descricao__titulo{
+        font-size: 32px;
+    }
+
+    .card__descricao__paragrafo{
+        font-size: 16px;
+        margin-right: 1em;
+    }
 }

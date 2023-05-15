@@ -1,12 +1,11 @@
 .topicos{
     background: var(--cor-azul-marinho);
     text-align: center;
-    
 }
 
 .topicos__titulo{
     padding: 1.5em 0 1em 0;
-    color: var(--branco);
+    color: #ffff;
     font-size: 16px;
     font-weight: 300;
 }
@@ -26,7 +25,27 @@
     font-weight: 700;
     text-decoration: none;
     padding: 1em;
-    color: var(--branco);
+    color: #ffff;
     background-color: var(--cor-laranja);
     border: 1px solid var(--cor-laranja);
+}
+
+@media screen and (min-width: 1024px){
+    .topicos__titulo{
+        font-size: 24px;
+    }
+
+    .topicos__item{
+        margin: 3em 0.5em;
+    }
+
+    .topicos__item__txt{
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .topicos{
+        padding: 3em 30vw;
+    }
 }

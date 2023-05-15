@@ -3,7 +3,9 @@
 @import url(styles/carrossel.css);
 @import url(styles/topicos.css);
 @import url(styles/contato.css);
+@import url(styles/Rodape.css);
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap');
 
 :root{
     --cor-de-fundo: #EBECEE;
@@ -13,13 +15,26 @@
     --preto: black;
     --cor-azul:linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --font-poppins:'Poppins', sans-serif;
+    --font-josefin: 'Josefin Sans', sans-serif;
+    --cinza: gray;
+    --cor-contato: #002F52;
 
+    --darkMode-icon: url("../img/lua.png");
+}
+
+.dark-mode {
+    --cor-de-fundo: rgb(44, 44, 44);
+    --branco: black;
+    --preto: white;
+    --cor-contato: white;
+    --darkMode-icon: url("../img/sol.png");
 }
 
 body{
     background-color: var(--cor-de-fundo);
     font-family: var(--font-poppins);
     font-size: 16px;
+    transition: 2s;
     font-weight: 400;
 }
 
